@@ -9,6 +9,9 @@ import UseEffect_Fetch from './Component/UseEffect_Fetch';
 import Navigate01 from './Component/Nabvigat';
 import UseEffect_Page from './Component/UseEffect_Page';
 import UseEffect_reload from './Component/UseEffect_reload';
+import UseRefColor from './Component/UseRefColor';
+import UseTRefStore from './Component/UseTRefStore';
+import UseRef from './Component/UseRef';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path='UseEffect_reload' element={<UseEffect_reload />} />
           <Route path='UseEffect_Fetch' element={<UseEffect_Fetch />} />
           <Route path='UseEffect_Fetch_Reload' element={<UseEffect_Fetch_Reload />} />
+          <Route path='UseRefColor' element={<UseRefColor />} />
+          <Route path='UseTRefStore' element={<UseTRefStore />} />
+          <Route path='UseRef' element={<UseRef />} />
         </Routes>
       </div>
     </>

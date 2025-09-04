@@ -17,6 +17,9 @@ const Navigate01 = () => {
                     <Link to="UseEffect_reload">UseEffect_reload</Link>
                     <Link to="UseEffect_Fetch">UseEffect_Fetch</Link>
                      <Link to="UseEffect_Fetch_Reload">UseEffect_Fetch_Reload</Link>
+                     <Link to="UseRefColor">UseRefColor</Link>
+                     <Link to="UseTRefStore">UseTRefStore</Link>
+                     <Link to="UseRef">UseRef</Link>
                 </div>
             </div>
 
