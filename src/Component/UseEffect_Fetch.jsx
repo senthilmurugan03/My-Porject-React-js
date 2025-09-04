@@ -5,9 +5,9 @@ const UseEffect_Fetch = () => {
   const [setout, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products?limit=5")
+    fetch("https://dummyjson.com/users?limit=10")
       .then((res) => res.json())
-      .then((data) => setProducts(data.products))
+      .then((data) => setProducts(data.users))
       .catch((err) => console.error("Some items have a problem:", err));
   }, []);
 
@@ -23,17 +23,21 @@ const UseEffect_Fetch = () => {
     Our Product List
   </h2>
 </div>
-{setout.map((product_New)=>(
-  <div key={product_New.id}>
-<img src={product_New.images[0]} alt={product_New.title} />
-<h1>{product_New.title}</h1>
-<h2>{product_New.brand}</h2>
-<p>{product_New.description}</p>
 
-<button>{product_New.price}</button>
+{setout.map((user_new) => (
+        <div key={user_new.id}>
 
-  </div>
-))}
+          <h1>{user_new.firstName} {user_new.maidenName} {user_new.lastName} </h1>
+          <p>{user_new.age}</p>
+          <p>{user_new.birthDate}</p>
+          <p>{user_new.gender}</p>
+          <p>{user_new.phone}</p>
+          <p>{user_new.email}</p>
+          <p>{user_new.university}</p>
+
+
+        </div>
+      ))}
     </>
   );
 };
